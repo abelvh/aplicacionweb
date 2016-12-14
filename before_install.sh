@@ -1,10 +1,10 @@
 #!/bin/bash
 yum -y install php70
-service httpd start
 mkdir /var/www/html/bzbackup
 cd /var/www/html
 chmod 755 -R bzbackup
 chown apache:apache -R bzbackup
+service httpd start
 yum -y install mysql-server
 service mysqld start
 yum -y install php php-mysql
