@@ -1,4 +1,6 @@
 #!/bin/bash
+yum -y install php70
+service httpd start
 yum -y install mysql-server
 service mysqld start
 yum -y install php php-mysql
